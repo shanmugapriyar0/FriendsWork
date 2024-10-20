@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> page of co-curriculam activity</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="js/cocurricular.js"></script>
+</head>
+<body> 
+    <form>
+        <label for="select">Select Participation :</label>
+        <select name="Participate" id="select"> 
+        <option value="null">--Select --</option>
+        <option value="Symposium">Symposium</option>
+        <option value="Seminar">Seminar</option>
+        <option value="Paper Presentation">Paper Presentation</option>
+        <option value="Workshop">Workshop</option>
+        <option value="Internship">Internship</option>
+        <option value="Others">Others</option>
+        </select>
+    </form>
+    <div id="form1">
+        <form>
+            <label>Event Name :<input type="text" name="Event"/> </label><br>
+            <label>Winner<input type="radio" name="status" value="Winner"/></label>
+            <label>Participate<input type="radio" name="status" value="Participate"/></label><br>
+            <label>Place :<input type="text" name="Place"/> </label><br>
+            <label>Date :<input type="date" name="Date"/> </label><br>
+        </form>
+    </div>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="certificate">Certificate</label>
+        <input type="file" id="certificate" name="certificate" multiple><br><br>
+        <input type="submit" value="submit">
+    </form>
+    </form>
+
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Achievement Page</title>
+    <link rel="stylesheet" href="C:\Users\Lenovo\Desktop\frd_work\achievement.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        
+        .faculty-login {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }        .faculty-login button {
+            padding: 10px 20px;
+            background-color:#007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .achievement-button, .back-button, .choice-button {
+            padding: 15px 30px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            margin: 10px;
+        }
+        .back-button {
+            background-color: #ff5733;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    </head>
+<body>
+    <div class="container">
+        <!-- Faculty Login Button -->
+        <div class="faculty-login">
+            <button onclick="facultyLogin()">Faculty Login</button>
+        </div>
+
+        <!-- Add Achievement Section -->
+        <div id="add-achievement-section">
+            <button class="achievement-button" onclick="showAchievementChoices()">Add Achievement</button>
+        </div>
+
+        <!-- Achievement Choice Section -->
+        <div id="achievement-choices-section" class="hidden">
+            <h2>Select Achievement Type</h2>
+            <button class="choice-button" onclick="studentAchievement()" id="studentpage">Student Achievement</button>
+            <button class="choice-button" onclick="facultyAchievement()" id="facultypage">Faculty Achievement</button>
+            <br>
+            <button class="back-button" onclick="goBack()">Back</button>
+        </div>
+    </div>
+
+    <script src="C:\Users\Lenovo\Desktop\frd_work\cocurricular.js">
+        
+    </script>
+</body>
+</html>

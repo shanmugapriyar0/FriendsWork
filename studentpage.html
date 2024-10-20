@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Achievement Form</title>
+    <link rel="stylesheet" href="C:\Users\Lenovo\Desktop\frd_work\achievement.css">
+</head>
+<body>
+
+    <h2>Student Achievement Form</h2>
+
+    <form id="achievementForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="regNo">Register Number:</label>
+        <input type="text" id="regNo" name="regNo" required><br>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+            <option value="">Select Department</option>
+            <option value="CSE">CSE</option>
+            <option value="EEE">EEE</option>
+            <option value="ECE">ECE</option>
+            <option value="Civil">Civil</option>
+            <option value="Mechanical">Mechanical</option>
+        </select><br>
+
+        <label for="batch">Batch:</label>
+        <select id="batch" name="batch" required>
+            <option value="">Select Batch</option>
+            <option value="2021-2025">2021-2025</option>
+            <option value="2022-2026">2022-2026</option>
+            <option value="2023-2027">2023-2027</option>
+            <option value="2024-2028">2024-2028</option>
+        </select><br>
+
+        <label >Achievement:</label><br>
+        
+        <button class="choice-button" onclick="navigateTo('file:///C:/Users/Lenovo/Desktop/frd_work/cocurricular.html')" id="cocurricular">Co-Curricular</button>
+        <button class="choice-button" onclick="navigateTo('file:///C:/Users/Lenovo/Desktop/frd_work/extracurricular.html')"id="extracurricular">Extra-Curricular</button><br>
+        
+    </form>
+    
+
+    <script src="C:\Users\Lenovo\Desktop\frd_work\cocurricular.js">
+        
+    </script>
+
+</body>
+</html>

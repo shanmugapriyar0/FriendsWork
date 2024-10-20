@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra curricula activity </title>
+    <link rel="stylesheet" href="C:\Users\Lenovo\Desktop\frd_work\achievement.css">
+</head>
+
+<body>
+    <h1>Select a Category</h1>
+
+    <div>
+        <div onclick="showSection('sports-section')" style="cursor: pointer; margin-bottom: 10px; padding: 10px; border: 1px solid black;">
+            <h2>Sports</h2>
+        </div>
+        <div onclick="showSection('ncc-section')" style="cursor: pointer; margin-bottom: 10px; padding: 10px; border: 1px solid black;">
+            <h2>NCC</h2>
+        </div>
+        <div onclick="showSection('fine-arts-section')" style="cursor: pointer; margin-bottom: 10px; padding: 10px; border: 1px solid black;">
+            <h2>Fine Arts</h2>
+        </div>
+    </div>
+
+    <!-- Sports Section -->
+    <div id="sports-section" class="section" style="display:none;">
+        <h2>Sports</h2>
+        <h3>Enter Sports Event Details</h3>
+        <form action="/submit-sports" method="post" enctype="multipart/form-data">
+            <label for="event-name-sports">Event Name:</label>
+            <input type="text" id="event-name-sports" name="event-name-sports"><br><br>
+
+            <label>Winner or Runner:</label><br>
+            <input type="checkbox" id="winner-sports" name="winner" value="Winner">
+            <label for="winner-sports">Winner</label><br>
+            <input type="checkbox" id="runner-sports" name="runner" value="Runner">
+            <label for="runner-sports">Runner</label><br><br>
+
+            <label for="place-sports">Place:</label>
+            <input type="text" id="place-sports" name="place-sports"><br><br>
+
+            <label for="date-sports">Date:</label>
+            <input type="date" id="date-sports" name="date-sports"><br><br>
+
+            <label for="certificate-sports">Attach Certificate:</label>
+            <input type="file" id="certificate-sports" name="certificate-sports"><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- NCC Section -->
+    <div id="ncc-section" class="section" style="display:none;">
+        <h2>NCC</h2>
+        <h3>Enter NCC Event Details</h3>
+        <form action="/submit-ncc" method="post" enctype="multipart/form-data">
+            <label for="event-name-ncc">Event Name:</label>
+            <input type="text" id="event-name-ncc" name="event-name-ncc"><br><br>
+
+            <label>Winner or Runner:</label><br>
+            <input type="checkbox" id="winner-ncc" name="winner" value="Winner">
+            <label for="winner-ncc">Winner</label><br>
+            <input type="checkbox" id="runner-ncc" name="runner" value="Runner">
+            <label for="runner-ncc">Runner</label><br><br>
+
+            <label for="place-ncc">Place:</label>
+            <input type="text" id="place-ncc" name="place-ncc"><br><br>
+
+            <label for="date-ncc">Date:</label>
+            <input type="date" id="date-ncc" name="date-ncc"><br><br>
+
+            <label for="certificate-ncc">Attach Certificate:</label>
+            <input type="file" id="certificate-ncc" name="certificate-ncc"><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Fine Arts Section -->
+    <div id="fine-arts-section" class="section" style="display:none;">
+        <h2>Fine Arts</h2>
+        <h3>Enter Fine Arts Event Details</h3>
+        <form action="/submit-fine-arts" method="post" enctype="multipart/form-data">
+            <label for="event-name-fine-arts">Event Name:</label>
+            <input type="text" id="event-name-fine-arts" name="event-name-fine-arts"><br><br>
+
+            <label>Winner or Runner:</label><br>
+            <input type="checkbox" id="winner-fine-arts" name="winner" value="Winner">
+            <label for="winner-fine-arts">Winner</label><br>
+            <input type="checkbox" id="runner-fine-arts" name="runner" value="Runner">
+            <label for="runner-fine-arts">Runner</label><br><br>
+
+            <label for="place-fine-arts">Place:</label>
+            <input type="text" id="place-fine-arts" name="place-fine-arts"><br><br>
+
+            <label for="date-fine-arts">Date:</label>
+            <input type="date" id="date-fine-arts" name="date-fine-arts"><br><br>
+
+            <label for="others-fine-arts">Others:</label>
+            <input type="text" id="others-fine-arts" name="others-fine-arts"><br><br>
+
+            <label for="certificate-fine-arts">Attach Certificate:</label>
+            <input type="file" id="certificate-fine-arts" name="certificate-fine-arts"><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        // Function to show selected section and hide others
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
