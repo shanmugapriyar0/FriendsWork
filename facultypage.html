@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department and Profession Form</title>
+    <link rel="stylesheet" href="C:\Users\Lenovo\Desktop\frd_work\achievement.css">
+    
+</head>
+<body>
+
+    <h2>Department and Profession Form</h2>
+
+    <form id="departmentForm">
+        <!-- Name -->
+        <div class="form-section">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <!-- Department Dropdown -->
+        <div class="form-section">
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="">Select Department</option>
+                <option value="CSE">CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="ECE">ECE</option>
+                <option value="Civil">Civil</option>
+                <option value="Mechanical">Mechanical</option>
+            </select>
+        </div>
+
+        <!-- Profession Dropdown -->
+        <div class="form-section">
+            <label for="profession">Profession:</label>
+            <select id="profession" name="profession" required onchange="showProfessionSection()">
+                <option value="">Select Profession</option>
+                <option value="Teaching">Teaching</option>
+                <option value="Non-teaching">Non-teaching</option>
+            </select>
+        </div>
+
+        <!-- Teaching Positions Dropdown (hidden by default) -->
+        <div class="form-section" id="teachingPositionSection">
+            <label for="teachingPosition">Teaching Position:</label>
+            <select id="teachingPosition" name="teachingPosition">
+                <option value="">Select Position</option>
+                <option value="Principal">Principal</option>
+                <option value="HOD">HOD</option>
+                <option value="ASP">ASP</option>
+                <option value="AP">AP</option>
+            </select>
+        </div>
+
+        <!-- Non-teaching Role Textbox (hidden by default) -->
+        <div class="form-section" id="nonTeachingRoleSection">
+            <label for="nonTeachingRole">Non-teaching Role:</label>
+            <input type="text" id="nonTeachingRole" name="nonTeachingRole" placeholder="Enter your role">
+        </div>
+        <button class="choice-button" onclick="navigateTo('file:///C:/Users/Lenovo/Desktop/frd_work/cocurricular.html')" id="cocurricular">Co-Curricular</button>
+        <button class="choice-button" onclick="navigateTo('file:///C:/Users/Lenovo/Desktop/frd_work/extracurricular.html')"id="extracurricular">Extra-Curricular</button><br>
+
+        <!-- Submit Button -->
+        
+    </form>
+
+    <!-- Result -->
+    <div id="result"></div>
+
+    <script src="C:\Users\Lenovo\Desktop\frd_work\cocurricular.js">
+        
+        
+    </script>
+
+</body>
+</html>
