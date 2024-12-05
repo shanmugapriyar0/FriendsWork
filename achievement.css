@@ -1,4 +1,6 @@
 body {
+            display:grid;
+            align-items: center;
             font-family: Arial, sans-serif;
             margin: 50px;
         }
@@ -25,7 +27,13 @@ button:hover {
         }
 
 .form-sectio n {
-            margin-bottom: 20px;
+        width: 400px;
+        height:flex;
+        padding:30px;
+        background-color: white;
+        border-top-style:outset;
+        box-shadow: 0px 4px 8px rgba(0,0,0,2);
+        
         }
 
      
